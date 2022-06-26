@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* header designing */
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(to right,#4150a9,#cd5832);
+
+}
+header h1{
+    position:relative;
+    top:-5px;
+    left:7px;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size:500%;
+    
+}
+header #search{
+    margin:5px 5px;
+    height:24px;
+}
+
+/* loginbox */
+.loginbox{
+    border:5px solid orange;
+    width:60%;
+    margin:auto;
+    margin-top:16px;
+    margin-bottom:16px;
+
+}
+.loginbox img{
+    width:250px;
+    height:200px;
+    padding:28px;
+    margin:auto;
+}
+/* .loginbox h2{ */
+    /* padding:52px; */
+/* } */
+.loginbox .box{
+    display:flex;
+    flex-flow:column wrap;
+}
+.box h2{
+    text-align:center;
+    margin:11px 5px;
+}
+.box form{
+    margin:auto;
+    padding:7px;
+}
+input{
+    padding:5px;
+}
+.loginbox p{
+    margin:11px 11px;
+}
+.loginbox button{
+    background:linear-gradient(to
+    right,#4150a9,#cd5832);
+    border-radius:10px;
+    color:white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border:none;
+}
+
+/* footer section css */
+footer{
+    width:100%;
+    /* position:absolute; */
+    /* bottom:0px; */
+    background:linear-gradient(to 
+right,#4150a9,#cd5832);
+    color:#fff;
+    padding:100px 0 30px;
+    border-top-left-radius:125px;
+    font-size:13px;
+    line-height:20px;
+}
+footer h1{
+    /* position:relative; */
+    /* top:-5px; */
+    /* left:7px; */
+    font-family: 'Oswald', 
+sans-serif;
+    color:white;
+    font-size:100px;
+    padding:20px 38px;
+}
+footer .row{
+    width:85%;
+    margin:auto;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-aroun
+d;
+}
+footer .col{
+    flex-basis:25%;
+    padding:8px;
+    margin:5px 5px;
+}
+footer .col h3{
+    width:fit-content;
+    margin-bottom:40px;
+    position:relative;
+}
+footer .followus ul{
+    margin:auto;
+    width:23%;
+    display:flex;
+    flex-flow: row wrap;
+    list-style-type:none;
+    justify-content:space-evenly;
+}
+footer .followus ul li a i{
+    color:white;
+    font-size:2rem;
+}
+footer h4{
+    text-align:center;
+    font-size:1.7rem;
+    margin:7px;
+    font-family: 'Baloo Bhai 2', cursive;
+}

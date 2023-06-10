@@ -1,0 +1,89 @@
+.red{
+    background-color: white;
+    /* background-image: linear-gradient(rgb(252, 66, 66) 10%,#FFffff 80%,red); */
+    box-shadow:0 0 2vw 2vw red;
+    transform: rotate(-70deg); 
+    z-index: -2;
+
+}
+.blue{
+    background-color: white;
+    /* background-image: linear-gradient(blue 8%,white,#fff 80%,blue 8%); */
+    box-shadow:0 0 2vw 2vw blue;
+    transform: rotate(70deg); 
+    z-index: -1;    
+    /* padding-right: 30vw; */
+}
+
+.saber{
+    width: 80vw;
+    height:8vw;
+    border-radius: 5vw;
+    animation: glow 1.5s linear infinite;
+}
+
+
+@keyframes rotates{
+    from{
+        /* background-image: linear-gradient(red,blue); */
+     
+        transform: rotate(60deg);
+        border-radius: 20%;
+    }
+    
+    20%{
+        /* background-image: linear-gradient(pink,cyan); */
+      
+        transform: rotate(120deg);
+        border-radius: 10%;
+    }
+    40%{
+      
+        transform: rotate(180deg);
+        border-radius: 20%;
+    }
+    60%{
+        /* background-image: linear-gradient(red,orange); */
+        background-color: whitesmoke;
+        
+        transform: rotate(240deg);
+    }
+    80%{
+        /* background-image: linear-gradient(red,orange); */
+        background-color: whitesmoke;
+        
+        transform: rotate(300deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    from {
+      color: lime; 
+      box-shadow: 0 0 9px lime; 
+    }
+    50% {
+      color: lime; 
+      box-shadow: 0 0 18px lime; 
+    }
+    to {
+      color: lime; 
+      box-shadow: 0 0 9px lime; 
+    }
+  }
+  
+body{
+    background-color: black;
+}
+.inner{
+    height: 2000px;
+    width: 2000px;
+    /* background-image: linear-gradient(red,blue);
+     */
+     background-color: blue;
+    border-radius: 70%;
+    animation:rotates 300ms  infinite ;
+}

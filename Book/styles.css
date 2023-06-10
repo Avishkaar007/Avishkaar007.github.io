@@ -1,0 +1,23 @@
+
+.card {
+    width:30vw ;
+    height:30vw;
+    margin:2vw;
+    border-radius: 3%;
+    border: 3% solid black;
+    background-color: rgb(159, 185, 185);
+    position: absolute;
+    
+}
+.joker{
+background-color: aqua;
+z-index: -2;
+}
+.queen{
+    background-color: blue;
+    z-index: -3;
+}
+.ace{
+    background-color: azure;
+    z-index:--1;    
+}

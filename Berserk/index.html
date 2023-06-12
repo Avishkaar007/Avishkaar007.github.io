@@ -1,29 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>Berserk</title>
-    <meta charset="utf-8" />
-    <link href="styles.css" rel="stylesheet" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="guts.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUTS</title>
+
 </head>
 
 <body>
     <main>
         <header>
-            <div class="icon-bar">
-                <a href="guts.html"><img id="logo" src="images/Berserk_Logo.svg" /></a>
-                <a href="guts.html"><img alt="guts1.png" src="images/guts1.png" /></a>
-                <div><a href="gallery.html"><img alt="gallery" src="images/Beast of Darkness.jpeg" /></a></div>
+            <div id="nav-placeholder">
             </div>
+            <script src="//code.jquery.com/jquery.min.js"></script>
+            <script>
+                $.get("nav.html", function (data) {
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
         </header>
-        <div class="container" id="image-container">
-            <img alt="guts" src="images/guts1.png" /><img alt="seal" src="images/seal.jpeg" />
-            <img alt="griffith" src="images/griffith.jpeg " /><img alt="ch86" src="images/ch86.jpeg" />
-            <img alt="guts" src="images/guts1.png " /><img alt="seal" src="images/seal.jpeg" />
-            <img alt="griffith" src="images/griffith.jpeg " /><img alt="ch86" src="images/ch86.jpeg" />
-        </div>
+        <div class="main-container index">
+            <div class="main-characters">
+                <a href="griffith.html" class="object">
+                    <aside class="side-bar">
+                        <img src="images/griffith.jpeg" alt="Guts Profile Picture">
+
+                        <h3>Kind</h3>
+
+                        <ul>
+                            <li>Human<small>(formerly)</small></li>
+                            <li>Demon</li>
+                        </ul>
+
+
+                    </aside>
+                </a>
+                <a href="guts.html" class="object">
+                    <aside class="side-bar">
+                        <img src="images/guts-dp.jpeg" alt="Guts Profile Picture">
+                        <div class="line bold"></div>
+                        <div class="key-value">
+                            <div><b>Name</b></div>
+                            <div>Guts</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="key-value">
+                            <div><b>Gender</b></div>
+                            <div>Male</div>
+
+
+                        </div>
+                        <div class="line"></div>
+                        <div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="kind">
+
+                            <h3 class="pi">Kind</h3>
+
+                            <div class="pi">
+                                <ul>
+                                    <li>Human<small>(formerly)</small></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </a>
+            </div>
+            <div class="blur-layer"
+                >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum consequatur dignissimos quos!
+                Necessitatibus tempore libero nulla earum et. Optio nam rerum architecto ad ducimus molestias,
+                asperiores deserunt eligendi quibusdam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam iusto illo nostrum sequi, distinctio esse
+                similique ducimus, eos ut optio autem quia assumenda earum eius cupiditate. Excepturi nemo itaque
+                perspiciatis.lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda eius
+                vitae harum adipisci molestiae nam eveniet, cumque accusamus voluptatem odio? Exercitationem fugiat
+                obcaecati voluptates laborum sint, eius quaerat eaque. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ullam, soluta eaque dicta rem aut, inventore hic blanditiis ratione nesciunt nemo
+                magni facilis. Inventore nobis necessitatibus labore fuga facilis, cumque aperiam Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Sint distinctio provident architecto eaque consequatur ipsam
+                similique, reiciendis iure quia, impedit voluptates magni labore nisi! Deserunt placeat cum facilis
+                similique necessitatibus!Lorem/div>
+            </div>
     </main>
 </body>
 

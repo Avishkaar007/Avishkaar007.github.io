@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUTS</title>
+    <style>
 
+    </style>
 </head>
 
 <body>
     <main>
         <header>
-            <div id="nav-placeholder">
+            <div id="nav-placeholder" style="z-index: 2;">
             </div>
-            <script src="//code.jquery.com/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery.min.js"></script>
             <script>
                 $.get("nav.html", function (data) {
                     $("#nav-placeholder").replaceWith(data);
@@ -24,47 +26,60 @@
             </script>
         </header>
 
-        <div class="main-characters">
+        <div class="main-characters" style="z-index:0;">
             <a href="griffith.html" class="object">
                 <aside class="side-bar">
+
                     <img src="images/griffith.jpeg" alt="Guts Profile Picture">
-
-                    <h3>Kind</h3>
-
-                    <ul>
-                        <li>Human<small>(formerly)</small></li>
-                        <li>Demon</li>
-                    </ul>
-
-
+                    <div class="bold"></div>
+                    <div class="key-value-container">
+                        <div class="key-value">
+                            <div><b>Name</b></div>
+                            <div>Griffith</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="key-value">
+                            <div><b>Gender</b></div>
+                            <div>Male</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="key-value"><b>Kind</b>
+                            <ul>
+                                <li>Human(formerly)</li>
+                                <li>Demon</li>
+                            </ul>
+                        </div>
+                    </div>
+    
                 </aside>
             </a>
             <a href="guts.html" class="object">
                 <aside class="side-bar">
+
                     <img src="images/guts-dp.jpeg" alt="Guts Profile Picture">
-                    <div class="line bold"></div>
-                    <div class="key-value">
-                        <div><b>Name</b></div>
-                        <div>Guts</div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="key-value">
-                        <div><b>Gender</b></div>
-                        <div>Male</div>
+                    <div class="bold"></div>
+                    <div class="bold tilted" style="transform:rotate(-30deg);width:9%"></div>
+                    <div class="key-value-container">
+                        <div class="key-value">
+                            <div><b>Name</b></div>
+                            <div>Guts</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="key-value">
 
-
-                    </div>
-                    <div class="line"></div>
-                    <div class="pi-item pi-data pi-item-spacing pi-border-color" data-source="kind">
-
-                        <h3 class="pi">Kind</h3>
-
-                        <div class="pi">
+                            <div><b>Gender</b></div>
+                            <div>Male</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="key-value"><b>Kind</b>
                             <ul>
-                                <li>Human<small>(formerly)</small></li>
+                                <li>Human(formerly)</li>
+                                <li>Demon</li>
                             </ul>
                         </div>
                     </div>
+
+
                 </aside>
             </a>
 

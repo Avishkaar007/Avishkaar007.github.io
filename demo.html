@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: black;
+            width:100%;     
+            border-radius: 50px;
+            position: fixed;
+        }
+        @keyframes loading {
+           from {width:0%;border-radius:50px;}
+           to{width:100%;border-radius:50px; stroke: black;}
+
+        }
+        .bar{
+            position: absolute;
+            height:5em;
+            width: 5em;
+            z-index: 3;
+            position: fixed;
+            top:20%;
+            background-color:magenta;
+            animation: loading 3s infinite ;
+        }
+        .green{
+            position: fixed;
+            top: 10px;
+            width: inherit;
+            height: inherit;
+            background-color: greenyellow;
+            animation: loading 3s infinite linear -0.2s;
+            z-index: 4;
+        }
+        .circle{
+            width:40em;
+            height:40em;
+            border-radius: 50%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-content: center;  
+            align-items: center;
+        }
+        .inner {
+            all:inherit;
+            padding: auto auto;
+            width: 30em;
+            height:30em;
+            background-color: aliceblue;
+            
+            ;
+        }
+    </style>
+</head>
+<body>
+<div class="body"><div class="bar">
+    </div>
+    <div class="green"></div>
+    
+</div>
+    <div class="doughnut">
+        <div class="circle"><div class="inner"></div></div>
+    </div>
+    
+
+</div>
+  
+</body>
+</html>

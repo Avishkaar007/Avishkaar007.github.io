@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#guitar {
+    width: 100vw;
+    height: 80vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+}
+
+.handle {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 5%;
+    height:100%;
+    z-index: 1 ;
+    /* position: absolute; */
+    background-color: brown;
+
+
+}
+
+#tip {
+    width: 100%;
+    height: 20%;
+    background-color: cyan;
+}
+
+#bar {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(134, 127, 127), darkgray);
+    z-index: 2;
+    background: blue;
+}
+
+.string-layer {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    width: 5%;
+
+}
+
+.string {
+    width: calc((100%)/24);
+    /* position: absolute; */
+    height: 100%;
+    z-index: 2;
+    
+    background-image: linear-gradient(grey, white, black, white grey);
+    background: black;
+    
+    border: 0.01rem solid purple;
+}
+.base{
+    width: 50%;
+    height: 150%;
+    display: flex;
+    /* position:absolute; */
+    flex-direction: column;
+    align-items: center;
+}
+.base #upper{
+    
+    width: 30%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25%;
+    position: relative;
+    z-index: -1;
+    background-image: radial-gradient(yellow, black);
+}
+.base #lower {
+    width: 45%;
+    border-radius: 25%;
+    height: 100%;
+    z-index: -1;
+    background-image: radial-gradient(pink, black);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+}

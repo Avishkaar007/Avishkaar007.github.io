@@ -1,6 +1,10 @@
-var http = require('http');
+import { connect } from './assets/js/database.js';
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
-}).listen(8080);
+connect(function (cb) {
+    if (cb) {
+        console.log('mysql conncted');
+    } else {
+        console.log('mysql connect failed.');
+        process.exit(1);
+    }
+});

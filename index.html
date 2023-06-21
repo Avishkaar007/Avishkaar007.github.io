@@ -17,7 +17,6 @@
     
     <nav class="navbar text-bg-primary shadow-lg ">
         <div class="container-fluid ">
-            h
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item"><a href="assets/webpage/about_me.html" class="nav-link text-white">About</a></li>
                 <li class="nav-item"><a crossorigin="anonymous" href="https://api.whatsapp.com/send?phone=8130438887" class="nav-link text-white">Contact</a></li> 
@@ -54,7 +53,16 @@
                 <button class="btn btn-danger btn-block" style="width:100%; border-radius:0;">Berserk</button>
                 </a>
         </div>  
+        <form>
+            <input type="text" placeholder="Enter Name" name="name" value="">
+            <input type="radio" name="gender" placeholder="Male" value="m">
+            <input type="radio" name="gender" placeholder="Female" value="f">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
     </div>
+    
+<script src="./app.js"  type="module"></script>
+<script src="./assets/js/database.js"  type="module"></script>
 </body>
 
 </html>

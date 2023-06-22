@@ -1,10 +1,19 @@
-import { connect } from './assets/js/database.js';
+const express=require("express");
+const app=express()
+app.set("view engine","ejs");
+app.get("/",(req,res)=>{
+    res.render("index");
+    console.log(101);
+    res.render('index', function(err, html) {
+        if(err) {console.log("Error")}
+        res.send(html);
+      });
+      
+}
+    )
+   
 
-connect(function (cb) {
-    if (cb) {
-        console.log('mysql conncted');
-    } else {
-        console.log('mysql connect failed.');
-        process.exit(1);
-    }
-});
+const port=2000
+app.listen(port,()=>{
+    console.log(`Listening on Port ${ port }`);
+})

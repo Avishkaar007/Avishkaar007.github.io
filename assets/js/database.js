@@ -1,7 +1,11 @@
-const express=require("express")
+const express = require("express")
 const app=express()
-app.listen(2000)
-app.get("/",(req,res)=>{
-    res.json("name:'hello'");
-    res.download("../audio/");
+
+app.get("/",(req,res) => {
+    res.status(404);
+    res.send("He");
+    
+})
+app.listen(2000,(req,res) =>{
+console.log("This is console");
 })

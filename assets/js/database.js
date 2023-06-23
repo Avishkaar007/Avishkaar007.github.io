@@ -6,6 +6,7 @@ app.get("/",(req,res) => {
     res.send("He");
     
 })
+
 app.listen(2000,(req,res) =>{
 console.log("This is console");
 })

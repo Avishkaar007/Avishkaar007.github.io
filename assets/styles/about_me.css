@@ -1,0 +1,52 @@
+.root{
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 100vh;
+    margin:0;
+    background-color: black;
+    
+
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(12,calc(100vh/12));
+    grid-template-columns: repeat(12,1fr);
+    object-fit: contain;
+   
+}
+
+nav{
+    grid-area: 1/1/2/13;
+    display: -ms-inline-grid;
+    justify-content: flex-start;
+    flood-color: aqua;
+    align-items: center;
+
+    font-family:fantasy;
+    /* font-size: x-large; */
+    color: aliceblue;
+
+    border-radius: 5px;
+    /* background-color: lightblue; */
+    
+    
+}
+/* 
+#bg{
+
+    image-rendering:optimizeQuality;
+    height:100%;
+    grid-area: 4/6/13/13;
+    
+} */
+.layer{
+    background-color: pink;
+}
+
+#one{
+    background-color: aqua;
+    grid-area: 4/4/7/8;
+    
+}

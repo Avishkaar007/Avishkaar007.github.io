@@ -5,64 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Project</title>
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/Fonts/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    </head>
+
+</head>
 
 <body>
-    
-    <nav class="navbar text-bg-primary shadow-lg ">
-        <div class="container-fluid w-100">
-            <ul class="nav navbar-nav d-flex flex-row justify-content-evenly w-25">
-                <li class="nav-item"><a href="assets/webpage/about_me.html" class="nav-link text-white"><p>About</p></a></li>
-                <li class="nav-item"><a crossorigin="anonymous" href="https://api.whatsapp.com/send?phone=8130438887" class="nav-link text-white">Contact</a></li> 
-            </ul>
+    <!-- <div class="bg-video">
+        <audio src="/assets/audio/just-relax-11157.mp3" autoplay loop></audio>
+        <video  loop autoplay muted id="video">
+            <source media="(min-width:769px) and (orientation:landscape)" src="/assets/Videos/Circle animation with particles.mp4">
+            <source media="(orientation:portrait)" src="/assets/Videos/black-moon-night.mp4"  >
+            </video>
+    </div> -->
 
-            <div class="nav-product">
-                <span class="navbar-toggler-icon" ></span>
+    <header class="header-m">
+        <i class="fa fa-navicon"></i>
+        <i class="toggle-button fa  fa-toggle-off"></i>
+    </header>
+
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <nav class="navbar">
+            <a href="#" class="nav-link">Home</a>
+            <a href="" class="nav-link">About</a>
+            <a href="" class="nav-link">Skill</a>
+            <a href="" class="nav-link">Projects</a>
+            <a href="" class="nav-link">Contact</a>
+        </nav>
+        <i class=" toggle-button fa  fa-toggle-off "></i>
+
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello Its Me</h3>
+            <h1>Avishkaar</h1>
+            <h3>And I am a </h3>
+            <p>a Web Designer</p>
+            <div class="home-sci">
+
             </div>
+        </div>
+        <div class="img-content">
+            <!-- <img src="/assets/images/download.jpeg" alt=""> -->
+        </div>
 
-        </div>
-    </nav>
-    <div class="row">
-        <div class=" col-xxl-3 col-xl-4 col-sm-6">
-                <img src="Projects/Berserk/images/Berserk.jpeg" class="img-fluid img-responsive " alt="Berserk">
-                <a href="Projects/Berserk/index.html" class="nav-link">
-                <button class="btn btn-danger btn-block" style="width:100%; border-radius:0;">Berserk</button>
-                </a>
-        </div>
-        <div class=" col-xxl-3 col-xl-4 col-sm-6">
-            <img src="Projects/Berserk/images/Berserk.jpeg" class="img-fluid img-responsive " alt="Berserk">
-                <a href="Projects/Berserk/index.html" class="nav-link">
-                <button class="btn btn-danger btn-block" style="width:100%; border-radius:0;">Berserk</button>
-                </a>
-        </div> 
-        <div class=" col-xxl-3 col-xl-4 col-sm-6">
-            <img src="Projects/Berserk/images/Berserk.jpeg" class="img-fluid img-responsive " alt="Berserk">
-                <a href="Projects/Berserk/index.html" class="nav-link">
-                <button class="btn btn-danger btn-block" style="width:100%; border-radius:0;">Berserk</button>
-                </a>
-        </div>  
-        <div class=" col-xxl-3 col-xl-4 col-sm-6">
-            <img src="Projects/Berserk/images/Berserk.jpeg" class="img-fluid img-responsive " alt="Berserk">
-                <a href="Projects/Berserk/index.html" class="nav-link">
-                <button class="btn btn-danger btn-block" style="width:100%; border-radius:0;">Berserk</button>
-                </a>
-        </div>  
-        <div class="loading"></div>
-        <!-- <form>
-            <input type="text" placeholder="Enter Name" name="name" value="">
-            <input type="radio" name="gender" placeholder="Male" value="m">
-            <input type="radio" name="gender" placeholder="Female" value="f">
-            <button type="submit" class="btn btn-info">Submit</button>
-        </form> -->
-    </div>
-<!--     
-<script src="./app.js"  type="module"></script>
-<script src="./assets/js/database.js"  type="module"></script> -->
+    </section>
+
+    <script>
+        let theme = localStorage.getItem("theme");
+        theme && document.body.classList.toggle(theme);
+        $(document).ready(function () {
+
+            $(".toggle-button").click(function () {
+
+                if (theme == "dark") {
+                    $(".toggle-button").toggleClass("fa-toggle-on");
+                    $("body").toggleClass("light");
+                    theme = "light";
+                    localStorage.setItem("theme", "light");
+                }
+                else if (theme == "light") {
+                    $(".toggle-button").toggleClass("fa-toggle-on");
+                    $("body").toggleClass("light");
+                    theme = "dark";
+                    localStorage.setItem("theme", "dark");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>

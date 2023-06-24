@@ -123,11 +123,15 @@ body {
 
 /* Table of Content */
 .toc{
-    width:clamp(200px,100vw,300px);
     border-radius:20px;
     background-color: var(--bg-light);
     color:var(--text-dark);
     padding:1em;
+    /* background-image: url("/assets/images/download.jpeg"); */
+    background-size: cover;
+    background-blend-mode:screen;  
+    background-position: center;
+    
 }
 ul{
     list-style: none;
@@ -159,7 +163,7 @@ ul{
     border-radius: 50%;
     --radius: 50%;
     background-image: radial-gradient(rgb(129, 127, 127) 10%, grey);
-    animation: shadow-bounce 1s infinite;
+    animation: shadow-bounce 1s infinite ease-in-out;
     z-index: -1;
     translate: 0 100%;
     box-shadow:inset 0px 0px 1em 1em rgb(180, 162, 162);

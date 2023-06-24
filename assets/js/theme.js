@@ -4,7 +4,6 @@ const theme=()=> {
         script.src = '/node_modules/jquery/dist/jquery.js';
         script.type = 'module';
         document.getElementsByTagName('body')[0].appendChild(script);
-        console.log("theme.js")
         let theme = localStorage.getItem("theme");
         theme && document.body.classList.toggle(theme);
         

@@ -37,12 +37,11 @@ body{
     /* margin:auto; */
     z-index: 101;
 }
-.logo{
-    position: relative;
-    font-size: 25px;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
+#logo{
+   
+    width:10%;
+    height:auto;
+    
 }
 .navbar a{
     display: inline-block;
@@ -70,30 +69,48 @@ body{
 }
 
 .toggle-button{
-    margin-left: auto;
+    margin-left:2%;
 }
 
 .home-content{
     max-width: 600px;
     z-index:11;
-
 }
 .home-content h3{
     font-size:32px;
     font-weight: 1000;
 }
-@media (width>1200px){
 
+.light{
+    background-color: rgb(230, 230, 236);
+    color:black;
+}
+
+.light .navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color :black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+@media (width>1200px){
+    .navbar a p{
+        font-weight: 700;
+        font-size: 1.5em;
+    }
 }
 @media (width<1200px) {
-    nav.navbar {
-        display: inline-block;
-        
-    }
-    .navbar a{
-        padding: 0%;
+
+    a.nav-link {
+        margin:10px;
     }
 
+    .navbar a p{
+        font-weight: 600;
+        font-size: 1em;
+    }
 }
 
 
@@ -114,30 +131,4 @@ body{
         margin:20px;
         visibility:visible;
     }
-    .img-content{
-        width:100vw;
-        height: auto;
-    }
-    #pfp-bg{
-        width:100vw;
-        height:100vh;
-    }
-    
-    
-    
-}
-
-.light{
-    background-color: rgb(230, 230, 236);
-    color:black;
-}
-
-.light .navbar a{
-    display: inline-block;
-    font-size: 25px;
-    color :black;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
 }

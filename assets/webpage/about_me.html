@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <script src="/main.js" type="module"></script>
     <link rel="stylesheet" href="/assets/styles/about_me.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|fire|scuffed-steel">
-
 </head>
 <body>
+    <header>
+            <div id="nav-placeholder">
+            </div>
+            <script src="https://code.jquery.com/jquery.min.js"></script>
+            <script>
+                $.get("/assets/webpage/nav.html",  (data) => {
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+    </header>
     
-    <main>
-
-        <nav class="font-effect-3d-float">
-            <a href="#"><div class="nav-link">About</div></a>
-
-            <div class="nav-link">Contact</div>
-        </nav>
-
-            <div class="layer " id="one"></div>
+    <main class="main">
+        <picture id="pfp">
+            <source srcset="/assets/images/profile-pic(1).png" media="(max-width: 767px)"  alt="img-pc"/>
+            <source srcset="/assets/images/profile-pic(8).png" media="(min-width: 768px)" alt="img-m" type="image/png"/>   
+            <img src="/assets/images/pfp.svg" alt=""/>  
+        </picture>
         
-            <div class="layer" id="two"></div>
-        <!-- <img id="bg" src="/assets/Videos/Black And White Loop GIF by Doze Studio - Find & Share on GIPHY.gif"> -->
-            
-
+        <div class="text-area">
+            <h1 class="font-effect-scuffed-steel ">Avishkaar Pawar</h1>
         </div>
     </main>
 </body>

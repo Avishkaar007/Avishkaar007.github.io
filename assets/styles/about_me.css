@@ -1,30 +1,48 @@
+@import "/assets/styles/styles.css";
+
 .root{
     box-sizing: border-box;
-    
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    --text-light: #fff;
+    --text-dark: #000;
+    --bg-dark: repeating-radial-gradient(rgb(63, 185, 155), rgb(10, 87, 110));
+    --bg-light: rgb(234, 234, 245);
+    --box-color-light:rgb(191, 218, 221);
+    --box-text-color-light:var(--text-dark);
+}
+
 body{
-    min-height: 100vh;
-    width: 100vw;
     margin:0;
-    background-color: rgb(100, 191, 243);
+    background-image: var(--bg-dark);
     display: flex;
     justify-content: center;
-    
 }
 
-main{
-    background-color: azure;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow:inset 0.1em 0.1em 0.7em 0.2em grey, 0.5em 0.4em 1em 0.5em darkcyan;
 
+.main{
+    padding: 20px;
+    width:clamp(300px,100%,768px);
+    background-color:var(--box-color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    
+    border-radius: 10px;
+    box-shadow:inset 0.1em 0.1em 0.7em 0.2em grey, 0.0em 0em 1em 0.5em rgb(46, 94, 94);
+    position: relative;
+    top:18vh;
 }
 #pfp{
-    width: 20%;
-    height: 20%;
+    display: flex;
+    justify-content: center;
 }
-
-@media (width<768px){
-    
+#pfp img {
+    width: 80%;
+    padding: 10%;
 }

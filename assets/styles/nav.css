@@ -1,0 +1,58 @@
+@import url("/assets/styles/light.css");
+/* Header */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    --text-light: #fff;
+    --text-dark: #000;
+    --bg-dark: repeating-radial-gradient(rgb(26, 27, 27), rgb(10, 87, 110));
+    --bg-light: rgb(218, 218, 228);
+    --box-color-light:rgb(64, 181, 196);
+    --box-text-color-light:var(--text-dark);
+    color: var(--text-dark);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    font-size: larger;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.header-m {
+    width: 100%;
+    height: 10%;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#logo {
+    width: 4em;
+    height: auto;
+    box-shadow: .1em .1em .1em .1em red;
+    background-color: white;
+}
+
+.navbar a ,.navbar a p{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: all 0.3s;
+}
+
+.toggle-button {
+    margin: 0 2%;
+}

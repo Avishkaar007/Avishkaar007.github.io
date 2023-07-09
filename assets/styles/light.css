@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    --text-light: #fff;
+    --text-dark: #000;
+    --bg-dark: repeating-radial-gradient(rgb(0, 0, 0), rgb(109, 170, 189));
+    --bg-light: rgb(218, 218, 228);
+    --box-color-light:rgb(64, 181, 196);
+    --box-text-color-light:var(--text-dark);
+}
+
+.light {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    background-image: none;
+}
+
+
+.light a {
+    color: var(--text-dark);
+}
+
+.light .navbar a:hover {
+    color: orangered;
+}
+
+.navbar a:hover {
+    background-color: rgb(18, 223, 120);
+    padding :0.5em;
+    border-radius:5px;
+    scale: 1.1;
+}
+.light .navbar a:hover{
+    background-color: rgb(101, 187, 226);
+}

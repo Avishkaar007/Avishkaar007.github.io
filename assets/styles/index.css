@@ -26,7 +26,6 @@ body {
 
 
 
-
 .main {
     position: absolute;
     width: 90%;
@@ -66,7 +65,7 @@ body {
     background-color: var(--bg-light);
     color:var(--text-dark);
     padding:1em;
-    /* background-image: url("/assets/images/download.jpeg"); */
+    background-image: url("/assets/images/download.jpeg");
     background-size: cover;
     background-blend-mode:screen;  
     background-position: center;

@@ -44,12 +44,24 @@
     background-color: white;
 }
 
-.navbar a ,.navbar a p{
+
+.navbar a{
     display: inline-block;
-    font-size: 25px;
+    margin:10px;
     text-decoration: none;
+    transition:all 0.2s;
+}
+.navbar a:hover {
+    background-color: rgb(18, 223, 120);
+    padding :0.5em;
+    border-radius:5px;
+    
+}
+.navbar a p{
+   
+    font-size: 25px;
     font-weight: 500;
-    margin-left: 35px;
+    
     transition: all 0.3s;
 }
 

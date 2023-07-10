@@ -1,0 +1,29 @@
+@import "/assets/styles/styles.css";
+body{
+    position: absolute;
+}
+.header,.header-m{
+position: relative;
+}
+main {
+    position: relative;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+main section button{
+    margin:clamp(10px,1%,50px);
+    width:clamp(300px,30vw,500px);
+    height:clamp(100px,20vh,200px);
+
+}
+main ::after{
+    content: "";
+    margin:clamp(10px,1%,50px);
+    width:clamp(300px,30vw,500px);
+    height:clamp(100px,20vh,200px); 
+}

@@ -38,7 +38,7 @@
     }
 
     .header-m {
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         font-size: 50px;
         margin: 20px;

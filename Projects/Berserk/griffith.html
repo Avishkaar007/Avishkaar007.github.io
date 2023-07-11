@@ -12,62 +12,27 @@
 </head>
 
 <body>
+    
     <main>
-        <header>
-            <div id="nav-placeholder">
-            </div>
-            <script src="//code.jquery.com/jquery.min.js"></script>
+        <header><script src="//code.jquery.com/jquery.min.js"></script>
             <script>
                 $.get("nav.html", function (data) {
-                    $("#nav-placeholder").replaceWith(data);
+                    $("body").append(data);
                 });
-            </script>
-        </header>
+            </script></header>
         <div class="guts-pic">
             <img src="images/griffith-dark.jpeg" alt="Guts">
         </div>
         <div class="main-container">
-
-            <aside class="side-bar">
-
-                <img src="images/griffith.jpeg" alt="Guts Profile Picture">
-                <div class="bold"></div>
-                <div class="key-value-container">
-                    <div class="key-value">
-                        <div><b>Name</b></div>
-                        <div>Griffith</div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="key-value">
-                        <div><b>Gender</b></div>
-                        <div>Male</div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="key-value"><b>Kind</b>
-                        <ul>
-                            <li>Human(formerly)</li>
-                            <li>Demon</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="key-value">
-                    <div ><b>Name</b></div>
-                    <div>Griffith</div>
-                </div>
-                <div class="line"></div>
-                <div class="key-value">
-                    <div><b>Gender</b></div>
-                    <div>Male</div>
-                </div>
-                <div class="line"></div>
-                <div class="key-value"><b>Kind</b>
-                <ul>
-                    <li>Human(formerly)</li>
-                    <li>Demon</li>
-                </ul>
-                </div> -->
-
-            </aside>
+            <script>
+                $.get("characters.html", function (data) {
+                    
+                    $(".main-container").prepend($(data).find("#griffith"));
+                    $(".card-inner").attr("style","transform:none");
+                   
+                });
+            </script>
+                
 
             <div class="about-guts">
                 <div class="box">
@@ -115,6 +80,7 @@
         </div>
 
     </main>
+    
 </body>
 
 </html>

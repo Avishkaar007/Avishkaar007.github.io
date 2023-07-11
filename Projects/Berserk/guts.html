@@ -1,117 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="guts.css">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUTS</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="guts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <title>GUTS</title>
 
-</head>
+    </head>
 
-<body>
-    <main>
-        <header>
-            <div id="nav-placeholder">
+    <body>
+        <div class="main">
+        <main>
+            
+                
+                <script>
+                    $.get("nav.html", function (data) {
+                        $(".main").append(data);
+                    });
+                </script>
+            
+
+            <div class="main-container">
+                <div class="guts-pic">
+                    <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
+                </div>
+                <script>
+                    $.get("characters.html", function (data) {
+                        
+                        $(".main-container").append($(data).find("#guts"));
+                        $(".card-inner").attr("style","transform:none");
+                    });
+                </script>
+
+                    <div class="about-guts">
+                        <div class="box">
+                            <p>Guts, renowned as the "Black Swordsman", is a
+                                former mercenary and branded wanderer who
+                                travels
+                                the world
+                                in a constant internal struggle between pursuing
+                                his own ends and upholding his attachments to
+                                those
+                                dear to him.
+
+                                At one time driven solely by his will to
+                                survive, Guts finds purpose in life upon joining
+                                the
+                                Band of
+                                the Falcon, greatly helping in the faction's
+                                storied successes during the Hundred-Year War as
+                                captain of
+                                the band's raiders. He eventually becomes
+                                dissatisfied with clinging to Griffith's
+                                dream[42] and
+                                departs
+                                from the band in pursuit of his own.[43]
+                                Following the horrors of the Eclipse prompted by
+                                Griffith,[44]
+                                Guts embarks on a two-year war against the God
+                                Hand and apostles, becoming increasingly
+                                embittered on
+                                his one-track quest for retribution. He in time
+                                realizes protecting his regressed lover is more
+                                important to him,[10] as well as something he
+                                cannot do alone,[45] and thus puts aside his
+                                quest
+                                for
+                                revenge while fostering camaraderie with new
+                                companions.</p>
+
+                        </div>
+                        <div class="box">
+                            <p>
+                                <ul>
+                                    <li>The <i>Berserk</i> states that circa the
+                                        , Guts is 24 years old, 204 cm, and 115
+                                        kg.
+                                        (<b>NOTE:</b> The <i>Berserk Official
+                                            Guidebook</i> is highly questionable
+                                        in its veracity.)
+                                    </li>
+                                    <li>The first English voice actor of Guts
+                                        isn't but it's actually from the video
+                                        game "
+                                        , despite
+                                        the fact the came out in 1997, the
+                                        English dub came out in 2002 while
+                                        came out
+                                        in Japan in 1999 then in North America
+                                        in 2000.</li>
+                                    <li>Guts reacted badly to touch for much of
+                                        his teenage years. During this time,
+                                        only
+                                        Casca and Griffith's touch escaped his
+                                        immediate ire.</li>
+                                    <li>Guts bears no reverence or respect for a
+                                        "God". On the contrary, he would like
+                                        nothing more
+                                        than for the entity to
+                                        "leave [him] the hell alone".</li>
+                                    <li>Guts still carries the Count's beherit.
+                                        It has not been confirmed to be his,
+                                        however; both
+                                        Flora and Gedfring have suggested that
+                                        he
+                                        may merely be its means of arriving to
+                                        its predestined owner.</li>
+                                    <li>Guts has proven successful in gambling
+                                        and won against several opponents ten
+                                        times in a row
+                                        at <a
+                                            href="http://en.wikipedia.org/wiki/Ch%C5%8D-han"
+                                            class="extiw"
+                                            title="wikipedia:Chō-han">Chō-Han
+                                            Bakuchi</a> during his time in the
+                                        Band of the
+                                        Falcon.</li>
+                                    <li>Though Femto claims Guts' existence is
+                                        beneath the God Hand's notice, Slan is
+                                        particularly
+                                        interested in the swordsman, and has
+                                        expressed wanting him to become a
+                                        member of their rank.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <script src="//code.jquery.com/jquery.min.js"></script>
-            <script>
-                $.get("nav.html", function (data) {
-                    $("#nav-placeholder").replaceWith(data);
-                });
-            </script>
-        </header>
-        <div class="guts-pic">
-            <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
-        </div>
-        <div class="main-container">
-            <div class="about-guts">
-                <div class="box">
-                    <p>Guts, renowned as the "Black Swordsman", is a former mercenary and branded wanderer who travels
-                        the world
-                        in a constant internal struggle between pursuing his own ends and upholding his attachments to
-                        those
-                        dear to him.
 
-                        At one time driven solely by his will to survive, Guts finds purpose in life upon joining the
-                        Band of
-                        the Falcon, greatly helping in the faction's storied successes during the Hundred-Year War as
-                        captain of
-                        the band's raiders. He eventually becomes dissatisfied with clinging to Griffith's dream[42] and
-                        departs
-                        from the band in pursuit of his own.[43] Following the horrors of the Eclipse prompted by
-                        Griffith,[44]
-                        Guts embarks on a two-year war against the God Hand and apostles, becoming increasingly
-                        embittered on
-                        his one-track quest for retribution. He in time realizes protecting his regressed lover is more
-                        important to him,[10] as well as something he cannot do alone,[45] and thus puts aside his quest
-                        for
-                        revenge while fostering camaraderie with new companions.</p>
-
-                </div>
-                <div class="box">
-                    <p>
-                    <ul>
-                        <li>The <i>Berserk</i> states that circa the , Guts is 24 years old, 204 cm, and 115 kg.
-                            (<b>NOTE:</b> The <i>Berserk Official Guidebook</i> is highly questionable in its veracity.)
-                        </li>
-                        <li>The first English voice actor of Guts isn't but it's actually  from the video game "
-                            , despite
-                            the fact the  came out in 1997, the English dub came out in 2002 while 
-                                came out
-                            in Japan in 1999 then in North America in 2000.</li>
-                        <li>Guts reacted badly to touch for much of his teenage years. During this time, only
-                            Casca and Griffith's touch escaped his immediate ire.</li>
-                        <li>Guts bears no reverence or respect for a "God". On the contrary, he would like nothing more
-                            than for the entity to "leave [him] the hell alone".</li>
-                        <li>Guts still carries the Count's beherit. It has not been confirmed to be his, however; both
-                            Flora and Gedfring have suggested that he
-                            may merely be its means of arriving to its predestined owner.</li>
-                        <li>Guts has proven successful in gambling and won against several opponents ten times in a row
-                            at <a href="http://en.wikipedia.org/wiki/Ch%C5%8D-han" class="extiw"
-                                title="wikipedia:Chō-han">Chō-Han Bakuchi</a> during his time in the Band of the
-                            Falcon.</li>
-                        <li>Though Femto claims Guts' existence is beneath the God Hand's notice, Slan is particularly
-                            interested in the swordsman, and has expressed wanting him to become a
-                            member of their rank.</li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-
-
-            <aside class="side-bar">
-
-                <img src="images/guts-dp.jpeg" alt="Guts Profile Picture">
-                <div class="bold"></div>
-                <div class="bold tilted" style="transform:rotate(-30deg);width:9%"></div>
-                <div class="key-value-container">                <div class="key-value">
-                    <div><b>Name</b></div>
-                    <div>Guts</div>
-                </div>
-                <div class="line"></div>
-                <div class="key-value">
-
-                    <div><b>Gender</b></div>
-                    <div>Male</div>
-                </div>
-                <div class="line"></div>
-                <div class="key-value"><b>Kind</b>
-                <ul>
-                    <li>Human(formerly)</li>
-                    <li>Demon</li>
-                </ul>
-                </div>
-            </div>
-
-
-            </aside>
-        </div>
-
-    </main>
-</body>
+        </main>
+    <div class="" ,style="clear:both;"></div>
+    /div>
+    </body>
 
 </html>

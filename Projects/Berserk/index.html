@@ -7,82 +7,30 @@
     <link rel="stylesheet" href="guts.css">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery.min.js"></script>
     <title>GUTS</title>
-    
+
 </head>
 
 <body>
+    <header>
+        <script>
+            $.get("nav.html", function (data) {
+                $("body").append(data);
+            });
+        </script>
+    </header>
     <main>
-        <header>
-            <div id="nav-placeholder" style="z-index: 2;">
-            </div>
-            <script src="https://code.jquery.com/jquery.min.js"></script>
-            <script>
-                $.get("nav.html",  (data) => {
-                    $("#nav-placeholder").replaceWith(data);
-                });
-            </script>
-        </header>
-
-        <div class="main-characters" style="z-index:0;">
-            <a href="griffith.html" class="object">
-                <aside class="side-bar">
-
-                    <img src="images/griffith.jpeg" alt="Guts Profile Picture">
-                    <div class="bold"></div>
-                    <div class="key-value-container">
-                        <div class="key-value">
-                            <div><b>Name</b></div>
-                            <div>Griffith</div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="key-value">
-                            <div><b>Gender</b></div>
-                            <div>Male</div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="key-value"><b>Kind</b>
-                            <ul>
-                                <li>Human(formerly)</li>
-                                <li>Demon</li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                </aside>
-            </a>
-            <a href="guts.html" class="object">
-                <aside class="side-bar">
-
-                    <img src="images/guts-dp.jpeg" alt="Guts Profile Picture">
-                    <div class="bold"></div>
-                    <div class="bold tilted" style="transform:rotate(-30deg);width:9%"></div>
-                    <div class="key-value-container">
-                        <div class="key-value">
-                            <div><b>Name</b></div>
-                            <div>Guts</div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="key-value">
-
-                            <div><b>Gender</b></div>
-                            <div>Male</div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="key-value"><b>Kind</b>
-                            <ul>
-                                <li>Human(formerly)</li>
-                                <li>Demon</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </aside>
-            </a>
-
-        </div>
+        
+        <script>
+            $.get("characters.html", function (data) {
+                $("main").append(data);
+            });
+        </script>
+        
     </main>
+   
+   
 </body>
 
 </html>

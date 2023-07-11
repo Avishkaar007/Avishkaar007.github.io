@@ -1,24 +1,24 @@
+*{
+    box-sizing: border-box;
+}
 .guts-pic {
-    
+    width: 100%;
     margin: 0 auto;
-    padding: 0;
-    background-image: linear-gradient(rgb(68, 17, 17),rgb(199, 47, 47),white);
+    
     display: flex;
     justify-content: center;
     object-fit: cover;
+    position: fixed;
     
 }
 .guts-pic img {
-    
     margin:0 ;
-    position:fixed;
-    z-index: -1;
     opacity: 0.3;
     
 }
 .about-guts{
     width:60%;
-    min-width: 360px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -26,15 +26,14 @@
 }
 .box{
     
-    background-color: rgba(206, 154, 154,1);
+    background-color: rgba(206, 154, 154,1);    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 2%;
+    padding: 5%;
     margin :2%;
-    
     border-radius: 10px;
     border: 1px groove grey;
     box-shadow: 5px 5px 5px 5px grey;
-    
+    opacity: 0.85;    
     
 }
 .key-value-container{
@@ -52,33 +51,51 @@
     
 }
 
-.side-bar {
-    
-    width: 35%;
-    height: fit-content;        
-    min-width: 360px;
-    
-    background-color:rgb(255, 218, 224);
-    
-    box-shadow: 10px 10px 5px 5px grey;
-    margin: 2%;
-    padding:0;
-    border: 10px solid rgb(223, 135, 150);
 
-    display: flex;
+.card{
+    margin: 1%; 
+    width:clamp(100px,50vw,300px); 
+    background: transparent;
+    perspective: 1000px;
+}
+
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+} 
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.front , .back{
+    
+    position: absolute; 
+    display: flex;  
     flex-direction: column;
-    object-fit: cover;
     align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
 }
-.side-bar img{
+.front{
+    background-color:rgb(255, 218, 224);
+    box-shadow: 10px 10px 5px 5px grey;
+    border: 10px solid rgb(223, 135, 150);
+    border-radius: 8px;
+}
+.back{
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+
+.front img{
     
     width: 80%;
-    margin:1% auto;
-    max-width:300px;
-    max-height: 400px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    aspect-ratio: 1;
     margin:5% auto;
     border: 2px groove black;
 }
@@ -102,18 +119,8 @@ p{
     width:90%;
     margin: 2% 0;
     height: 3px;
-    
-
 }
 
-
-
-.main-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
 
 
 

@@ -19,7 +19,7 @@
             <div class="main-container">
             <script>
                 $.get("characters.html", function (data) {
-                    $(".main-container").append(data);
+                    $(".main-container").append($(data).find(".card"));
                 });
             </script>
             </div>

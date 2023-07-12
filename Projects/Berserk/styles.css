@@ -14,25 +14,25 @@ body {
     width: 100%;
     min-height: 100%;
     position: relative;
-    
 }
 
-
+.main{
+    position: static;
+    height:max-content;
+}
 main {
-    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    position: static;
-    height: auto;
-    padding-top: 100px;
+    min-height: 100%;
 }
 
 
 .icon-bar {
-    position: absolute;
-    top:0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     width: 100%;
     background-color: maroon;
     display: flex;
@@ -43,19 +43,17 @@ main {
 
 .main-container{
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 100px;
-    position: relative;
+    position:static ;
 
 }
 .footer{
     width: 100%;
-    
     position: absolute;
-    bottom: 0;
+    bottom:0;
     padding:1% 0;
     background-color:rgb(107, 7, 7);
     opacity: 1;
@@ -91,7 +89,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 

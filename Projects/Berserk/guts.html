@@ -8,33 +8,26 @@
         <link rel="stylesheet" href="guts.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="./main.js"></script>
         <title>GUTS</title>
 
     </head>
 
     <body>
         <div class="main">
-        <main>
-            
-                
-                <script>
-                    $.get("nav.html", function (data) {
-                        $(".main").append(data);
-                    });
-                </script>
-            
+            <main>
 
-            <div class="main-container">
-                <div class="guts-pic">
-                    <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
-                </div>
-                <script>
-                    $.get("characters.html", function (data) {
-                        
-                        $(".main-container").append($(data).find("#guts"));
-                        $(".card-inner").attr("style","transform:none");
-                    });
-                </script>
+                <div class="main-container">
+                    <div class="guts-pic">
+                        <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
+                    </div>
+                    <script>
+                        $.get("characters.html", function (data) {
+                            
+                            $(".main-container").prepend($(data).find("#guts"));
+                            $(".card-inner").attr("style","transform:none");
+                        });
+                    </script>
 
                     <div class="about-guts">
                         <div class="box">
@@ -135,8 +128,7 @@
             </div>
 
         </main>
-    <div class="" ,style="clear:both;"></div>
-    /div>
+
     </body>
 
 </html>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="guts.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="./main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUTS</title>
 
@@ -14,12 +16,7 @@
 <body>
     
     <main>
-        <header><script src="//code.jquery.com/jquery.min.js"></script>
-            <script>
-                $.get("nav.html", function (data) {
-                    $("body").append(data);
-                });
-            </script></header>
+        
         <div class="guts-pic">
             <img src="images/griffith-dark.jpeg" alt="Guts">
         </div>
@@ -29,7 +26,6 @@
                     
                     $(".main-container").prepend($(data).find("#griffith"));
                     $(".card-inner").attr("style","transform:none");
-                   
                 });
             </script>
                 

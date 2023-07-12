@@ -25,7 +25,9 @@
                 $.get("characters.html", function (data) {
                     
                     $(".main-container").prepend($(data).find("#griffith"));
-                    $(".card-inner").attr("style","transform:none");
+                    $(".card-inner , .card , .front").attr("style","transform:none");
+                    $(".back ").attr("style","transform:rotateY(180deg)");
+                    
                 });
             </script>
                 

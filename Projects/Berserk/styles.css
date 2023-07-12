@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
+    margin:0;
 }
 
 ul{
@@ -17,8 +18,7 @@ body {
 }
 
 .main{
-    position: static;
-    height:clamp(400px,100,600px);
+    position: static
 }
 main {
     display: flex;

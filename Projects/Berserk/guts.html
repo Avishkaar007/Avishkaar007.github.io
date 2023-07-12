@@ -15,20 +15,24 @@
 
     <body>
         <div class="main">
+            <div class="guts-pic">
+                <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
+            </div>
             <main>
 
                 <div class="main-container">
-                    <div class="guts-pic">
-                        <img src="images/FUCK YEAH BERSERK.png" alt="Guts">
-                    </div>
+                    
                     <script>
                         $.get("characters.html", function (data) {
                             
                             $(".main-container").prepend($(data).find("#guts"));
-                            $(".card-inner").attr("style","transform:none");
+                            $(".card-inner , .card , .front").attr("style","transform:none");
+                            $(".back ").attr("style","transform:rotateY(180deg)");
+                            
                         });
                     </script>
-
+                    
+                    
                     <div class="about-guts">
                         <div class="box">
                             <p>Guts, renowned as the "Black Swordsman", is a

@@ -6,6 +6,8 @@
     <title>My Projects</title>
     
     <script src="/main.js" type="module"></script>
+    <script src="/assets/js/projects.cjs"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/styles/projects.css">
 
 </head>
@@ -13,7 +15,6 @@
     
         <div id="nav-placeholder">
         </div>
-        <script src="https://code.jquery.com/jquery.min.js"></script>
         <script>
             $.get("/assets/webpage/nav.html",  (data) => {
                 $("#nav-placeholder").replaceWith(data);
@@ -24,14 +25,10 @@
         <section>
             <button onclick="redirect('/Projects/Document-Project/index.html')"><h1>Documentation Project</h1></button>
             <button onclick="redirect('/Projects/Berserk/index.html')"><h1>BERSERK</h1></button>
-            <button onclick="redirect('/Projects/Document-Project/index.html')"><h1>Documentation Project</h1></button> 
+            <button onclick="redirect('/Projects/Portfolio/index.html')"><h1>Portfolio</h1></button> 
         </section>
         
     </main>
     
-    <script>function redirect(url){
-        window.location.href=url;
-    }
-    </script>
 </body>
 </html>

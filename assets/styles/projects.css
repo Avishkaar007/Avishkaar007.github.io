@@ -2,6 +2,7 @@
 body{
     position: absolute;
 }
+
 .header,.header-m{
 position: relative;
 }
@@ -17,9 +18,12 @@ main section{
 }
 main section button{
     margin:clamp(10px,1%,50px);
-    width:clamp(300px,30vw,500px);  
+    width:clamp(100px,30vw,500px);  
     height:clamp(100px,20vh,200px);
 
+}
+main section button:hover{
+    
 }
 main ::after{
     content: "";

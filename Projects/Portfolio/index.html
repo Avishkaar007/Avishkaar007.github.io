@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="nav-holder">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./main.js"  type="module"></script>
+        <title>Avishkaar - Portfolio</title>
+        <link rel="stylesheet" href="./styles.css"></link>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-holder">
+                <div class="left">
+                    Avishkaar
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <section class="firstSection">
+                
+                <div class="leftSection">
+                    
+                    <div>
+                        Hello
+                    </div>
+                    <div>
+                        I am <span class="purple">Avishkaar</span>
+                    </div>
+                    <span id="job" class="purple" >a Web Developer</span>
+                </div>
+                <div class="rightSection">
+                    <img src="./assets/images/Samayo.org-Blog-Web-Design-SEO-creazione-siti-web-blog-e-commerce-Ayouni-Housam-102-1024x1024.png" alt="">
+                </div>
+            </section>
+            <hr>
             
-        </nav>
-    </header>
-</body>
+            <section class="secondSection">
+                Past Experience
+
+            </section>
+        </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed('#job', {
+        strings: ['a web developer', 'a Student', 'a Teacher'],
+        typeSpeed: 50,
+      })
+    </script>
+    
+       
+    </body>
 </html>

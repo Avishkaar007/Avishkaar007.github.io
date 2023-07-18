@@ -1,7 +1,7 @@
 import "../../node_modules/jquery/dist/jquery.js";
 const theme = () => {
     var script = document.createElement('script');
-    script.src = '/node_modules/jquery/dist/jquery.js';
+    script.src = 'https://code.jquery.com/jquery.min.js';
     
 
     let theme = localStorage.getItem("theme");
@@ -28,6 +28,6 @@ const theme = () => {
 
     });
 
-    document.getElementsByTagName('body')[0].appendChild(script);
+    document.getElementsByTagName('body')[0].prepend(script);
 }
 export default theme;

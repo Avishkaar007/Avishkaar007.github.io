@@ -43,5 +43,7 @@
         font-size: 50px;
         margin: 20px;
         visibility: visible;
+        display: flex;
+        justify-content:space-around;
     }
 }

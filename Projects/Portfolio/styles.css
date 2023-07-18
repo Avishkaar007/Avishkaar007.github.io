@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: poppins,sans-serif;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    background-color: rgb(1, 1, 48);
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    margin: 0 24px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li a:hover{
+    color: blue;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around  ;
+    align-items: center;
+}
+
+.firstSection>div{
+    width:40%;
+}
+
+.leftSection{
+    margin:0;
+    
+    font-size: 2.5rem;
+}
+.rightSection img{
+    width: 80%;
+    display: flex;
+    margin: 32px 0;
+
+
+}
+
+.purple{
+    color:blueviolet;
+    font-family:pangolin;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background:rgb(131, 131, 177);
+    margin: 48px ;
+}

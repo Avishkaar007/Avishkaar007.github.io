@@ -6,9 +6,11 @@
     "firebase": "^9.23.0",
     "firebase-tools": "^12.4.0",
     "jquery": "^3.7.0",
+    "mongodb": "^5.7.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.22",
-    "sass": "^1.63.4"
+    "sass": "^1.63.4",
+    "typed.js": "^2.0.16"
   },
   "scripts": {
     "start": "nodemon app.js"

@@ -3,31 +3,58 @@ body{
     position: absolute;
 }
 
+
 .header,.header-m{
 position: relative;
 }
 main {
+    display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 main section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 main section button{
-    margin:clamp(10px,1%,50px);
-    width:clamp(100px,30vw,500px);  
-    height:clamp(100px,20vh,200px);
+    margin:16px;
+    width:clamp(100px,30%,500px);  
+    height:150px;
+    border-radius: 10px;
+    border-style: groove;
+    font-size: 1rem;
+    word-break:break-all;
 
 }
 main section button:hover{
+    background-color: rgb(8, 8, 117);
+    color:aqua;
+}
+main section button h1{
+    color:inherit;
+}
+.left{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.right{
+    width: 70%;
+}
+#bg-img{
+    width: 300px;
+    max-height: 300px;
+    filter: opacity(0.8) blur(1px) ;
+    object-fit: cover;
     
 }
-main ::after{
-    content: "";
-    margin:clamp(10px,1%,50px);
-    width:clamp(300px,30vw,500px);
-    height:clamp(100px,20vh,200px); 
+@media (max-width:768px) {
+    .left{width: 100%;}
+
+    .right{width: 100%;}
 }

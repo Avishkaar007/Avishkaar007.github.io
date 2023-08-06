@@ -22,11 +22,21 @@
         </script>
     
     <main>
-        <section>
-            <button onclick="redirect('/Projects/Document-Project/index.html')"><h1>Documentation Project</h1></button>
-            <button onclick="redirect('/Projects/Berserk/index.html')"><h1>BERSERK</h1></button>
-            <button onclick="redirect('/Projects/Portfolio/index.html')"><h1>Portfolio</h1></button> 
-        </section>
+        <div class="left">
+            <div class="">
+                <img id="bg-img" src='/assets/images/fantasy.png' alt="bg">
+            </div>
+        </div>
+        <div class="right">
+            <section>
+                <button onclick="redirect('/Projects/Document-Project/index.html')" ><h1>Documentation Project</h1></button>
+                <button onclick="redirect('/Projects/Berserk/index.html')" onmouseleave="preview('/assets/images/fantasy.png')" onmouseenter="preview('/Projects/Berserk/images/Berserk.jpeg')"><h1>BERSERK</h1></button>
+                <button onclick="redirect('/Projects/Portfolio/index.html')"><h1>Portfolio</h1></button>
+                <button onclick="redirect('/Projects/MyApp/Leonardo')" onmouseleave="preview('/assets/images/fantasy.png')" onmouseenter="preview('https://www.efekto.tv/wp-content/uploads/2020/04/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg')" ><h1>Leonardo</h1></button>
+                
+            </section>
+        </div>
+       
         
     </main>
     

@@ -110,6 +110,12 @@
     background-color: rgb(83, 156, 219);
     border: ridge 5px gray;
     transform: rotateY(180deg);
+    color:white;
+    padding:10px;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration:wavy;
 }
 
 

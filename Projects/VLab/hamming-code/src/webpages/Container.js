@@ -6,7 +6,7 @@ function Aim() {
             <h2 class="heading">Aim</h2>
         </div>
         <div class="desc1">
-            <p class="desc">To generate nth Prime number </p>
+            <p class="desc">To SImulate Hamming Code </p>
         </div>
     </div>)
 }
@@ -48,6 +48,7 @@ function Practice() {
             <div class="title">
                 <h2 class="heading">Practice</h2>
             </div>
+            <p>Lorem</p>
         </div>
     )
 }

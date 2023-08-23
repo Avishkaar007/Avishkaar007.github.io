@@ -74,3 +74,10 @@ hr{
     background:rgb(131, 131, 177);
     margin: 48px ;
 }
+
+.secondSection>div{
+    margin:100px
+}
+.secondSection h1{
+    color:orangered
+}

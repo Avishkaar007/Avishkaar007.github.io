@@ -6,10 +6,14 @@
 }
 #goFullScreen{
     position: relative;
-    right: 20px;
+    float: right;
     width: 50px;
     height: 50px;
     font-size: xx-large;
     border: solid 0.1px grey ;
     border-radius: 10px;
+}
+
+.line{
+    width: 100%;
 }
